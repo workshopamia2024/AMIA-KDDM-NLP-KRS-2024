@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AMIA KDDM, NLP, and KRS</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/AMIA_KDDM_logo-favicon.jpg" rel="icon">
+  <link href="img/AMIA_KDDM_logo-apple-touch.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/AMIA_KDDM_logo.jpg" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">Introduction</a></li>
+          <li><a href="#outline">Outline</a></li>
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="#submission">Submission</a></li>
+
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Empowering Healthcare with<br> Knowledge-Augmented <span>Large Language Models</span></h1>
+      <p class="mb-4 pb-0">November 9 - 13, Hilton Union Square, San Francisco</p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Introduction</h2>
+            <p>In the rapidly evolving landscape of healthcare technology, the integration of Large Language Models (LLMs) stands at the forefront of innovation, offering unprecedented opportunities to transform patient care, medical research, and healthcare operations. However, current mainstream generative LLMs, such as OpenAI’s ChatGPT and Meta’s LlaMa 2, may generate inaccurate, misleading, or even harmful content due to their inherent uncertainly, incompleteness, or bias from training data, among others. These issues can have serious consequences for patient safety when these models are directly used for health applications. Our collaborative workshop, jointly organized by AMIA KDDM, NLP, and KRS Working Groups, aims to delve into the cutting-edge advancements that augment LLM capabilities, focusing on Retrieval-Augmented Generation (RAG), in-context learning, contrastive learning [1], LLM finetuning (e.g., low-rank adaptation) [2], prompt tuning, and zero-short/few-shot learning. These techniques can be broadly categorized into prompting strategies, retrieval-based strategies, and finetuning strategies, and their optimal use is still in debate. These sophisticated techniques are pivotal in enhancing the quality, accuracy, and reliability of LLM-based applications across a broad spectrum of healthcare domains.
+              One prime example is the development of advanced medical Question Answering (QA) systems that leverage RAG to provide precise, evidence-based answers drawn from vast medical literature and patient data. Similarly, the use of contrastive learning methods enables the creation of more robust diagnostic tools by effectively distinguishing between complex cases with subtle differences in symptoms or imaging. Few-shot learning techniques empower LLMs to adapt to specialized medical fields quickly, using minimal example data to generate knowledgeable responses or identify rare conditions. RAG combines the benefits of retrieval-based methods, which search through a database to find relevant information, with the generative capabilities of LLMs, which can synthesize and predict text. This approach allows LLMs to pull in the most current information from medical databases, research papers, or clinical guidelines, ensuring the generated responses are based on the latest medical knowledge. Beyond these, the workshop will explore explainability and interpretability of LLMs, as well as the ethical considerations in deploying these advanced AI tools in sensitive healthcare environments.
+              By convening experts from healthcare, AI research, and ethics, this workshop seeks to explore the potential of these technologies to provide up-to-date medical information, facilitate better decision-making, and improve patient outcomes. We invite the attendees to navigate the intersection of AI innovation and medical expertise, charting a course toward a future where technology and healthcare work hand in hand to achieve optimal health outcomes, all while ensuring ethical standards and patient privacy are upheld.
+            </p>
+            <p>By convening experts from healthcare, AI research, and ethics, this workshop seeks to explore the potential of these technologies to provide up-to-date medical information, facilitate better decision-making, and improve patient outcomes. We invite the attendees to navigate the intersection of AI innovation and medical expertise, charting a course toward a future where technology and healthcare work hand in hand to achieve optimal health outcomes, all while ensuring ethical standards and patient privacy are upheld.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!--==========================
+      Outline Section
+    ============================-->
+    <section id="outline">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Outline</h2>
+            <div class="outline-header">
+            </div>
+            <p>This collaborative workshop is organized three themes: (1) introducing various healthcare and medical applications of LLMs; (2) introducing knowledge-augmented techniques for LLMs (e.g., RAG, in-context learning, LLM finetuning, few-shot learning, incremental learning); (3) multimodal capabilities. We are interested in, but not limited to the following topics during this workshop:
+            </p>
+            <ul>
+              <li><strong>LLM applications in healthcare</strong></li>
+              <li><strong>Knowledge-augmented and retrieval-augmented techniques for LLMs</strong></li>
+              <li><strong>Explainability of LLM generation</strong></li>
+              <li><strong>Multimodal capabilities of LLMs for health applications</strong></li>
+            </ul>
+            <p>We plan to kick off the workshop with a 15-minute introduction of LLM for medical QA and 30-minute keynote presented by a leading scientist on the overarching themes of LLM applications and knowledge enrichment. After it, there will be two sessions of short talks of 12 minutes each. The first session will include invited speakers who have published relevant studies in the field. The coffee break will also be used for students’ poster presentations. We will call for student presentation abstract. The abstracts will be reviewed by workshop organizers, and five abstracts will be accepted for presentation. After the coffee break, there will be a second session of invited short talks. In the last session, there will be a panel of 4 speakers and a moderator to discuss the success, challenges, and low-hanging fruits of LLM applications, challenges, and solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!--==========================
+      Objective Section
+    ============================-->
+    <section id="objective">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Objective</h2>
+            <p>Our intended audience includes individual (e.g., clinicians, researchers, policymakers, and trainees) who are interested in practical applications of AI and LLM in healthcare and have working knowledge of LLMs. Researchers and clinicians in the clinical and healthcare community mainly focusing on traditional knowledge-driven approaches are welcome to join and converse with researchers from the data science and computer science fields. In terms of the level of expected backgrounds, 25% is basic, 50% is intermediate, and 25% is advanced.
+            </p>
+            <p>At the conclusion of this workshop, a participant will be able to:
+            </p>
+            <ul>
+              <li>Understand the promises and limitations of LLMs for healthcare applications.</li>
+              <li>Summarize the state-of-the-art research and techniques to improve LLM quality and accuracy.</li>
+              <li>Identify research and development opportunities in this space and potential collaborators for deeper engagement.</li>
+              <li>Understand the clinical relevance of this work and how it can be capitalized to improve patient outcomes and biomedical research.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Event Speakers</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Zhiyong Lu.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Zhiyong Lu</a></h3>
+                <p>Senior Investigator, NIH Intramural Research Program</p>
+                <div class="social">
+                  <a href="https://www.ncbi.nlm.nih.gov/research/bionlp/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/drzhiyonglu" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Qiao Jin.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Qiao Jin</a></h3>
+                <p>Postdoctoral Research Fellow, Dr. Zhiyong Lu’s Biomedical Text Mining Group (NCBI)</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=tYy-bzgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/qiao-jin-andy" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Yifan Peng.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Yifan Peng</a></h3>
+                <p>Assistant Professor, Department of Population Health Sciences at Weill Cornell Medicine</p>
+                <div class="social">
+                  <a href="https://penglab.weill.cornell.edu/team/yifan-peng" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/yfpeng" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Nansu Zong.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Nansu Zong</a></h3>
+                <p>Assistant Professor, Mayo Clinic's Department of AI and Informatics Research</p>
+                <div class="social">
+                  <a href="https://www.mayo.edu/research/faculty/zong-nansu-ph-d/bio-20478804" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/nansu-zong-ph-d-111071200" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Zhe he.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Zhe He</a></h3>
+                <p>Associate Professor, School of Information (FSU)</p>
+                <div class="social">
+                  <a href="https://directory.cci.fsu.edu/zhe-he/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/zhehe" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Rui Zhang.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Rui Zhang</a></h3>
+                <p>Associate Professor, Department of Surgery (UMN)</p>
+                <div class="social">
+                  <a href="https://med.umn.edu/bio/rui-zhang" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/rui-zhang-003065b" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Aokun Chen.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Aokun Chen</a></h3>
+                <p>Assistant Scientist, University of Florida</p>
+                <div class="social">
+                  <a href="https://hobi.med.ufl.edu/profile/chen-aokun/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/aokun-chen-21802583" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Jiang Bian.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speakers">Jiang Bian</a></h3>
+                <p>Professor and Division Chief, Biomedical Informatics at the University of Florida</p>
+                <div class="social">
+                  <a href="https://hobi.med.ufl.edu/profile/bian-jiang/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/bi0nji0ng" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+        </div>
+
+        <h3 class="sub-heading">The proposed workshop will be 3.5 hours, including a 30-minute coffee break for attendees to network with each other. All the speakers have confirmed participation.
+        </h3>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>8:30-8:40 AM</time></div>
+              <div class="col-md-10">
+                <h4>Welcome and opening remarks</h4>
+                <p>Introduction to LLM for healthcare applications</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>8:40-9:20 AM</time></div>
+              <div class="col-md-10">
+                <h4>Keynote <span>30 min presentation + 10 min Q&A</span></h4>
+                <div class="d-flex align-items-center">
+                <div class="speaker">
+                  <img src="img/speakers/Zhiyong Lu.jpg" alt="Brenden Legros">
+                </div>
+                <p>Enhancing Standard LLMs for Biomedicine: Techniques, Trends, and Best Practices</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>9:20-10:05 AM</time></div>
+              <div class="col-md-10">
+                <h4>Invited presentations I <span>12 min presentation + 3 min Q&A for each</span></h4>
+                <!-- First Speaker -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="speaker">
+                    <img src="img/speakers/Yifan Peng.jpg" alt="Hubert Hirthe">
+                  </div>
+                  <div>
+                    <p>Using LLMs and Contrastive Examples for SDoH Annotation</p>
+                  </div>
+                </div>
+
+                <!-- Second Speaker -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="speaker">
+                    <img src="img/speakers/Nansu Zong.jpg" alt="Another Speaker">
+                  </div>
+                  <div>
+                    <p>Advancing Large Language Models in Biomedical Applications</p>
+                  </div>
+                </div>
+
+                <!-- Second Speaker -->
+                <div class="d-flex align-items-center">
+                  <div class="speaker">
+                    <img src="img/speakers/Zhe he.jpg" alt="Another Speaker">
+                  </div>
+                  <div>
+                    <p>Retrieval Augmented Generation for Enhancing LLMs in Answering Patients’ Questions on Lab Test Results</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:05-10:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break & Student Poster Presentations</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:30-11:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>Invited presentations II <span>12 min presentation + 3 min Q&A for each</span></h4>
+                <!-- First Speaker -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="speaker">
+                    <img src="img/speakers/Rui Zhang.jpg" alt="Hubert Hirthe">
+                  </div>
+                  <div>
+                    <p>Retrieval-Augmented Chain-of-Thought Framework for LLM on Few-Shot NER and Triple Extraction</p>
+                  </div>
+                </div>
+
+                <!-- Second Speaker -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="speaker">
+                    <img src="img/speakers/Aokun Chen.jpg" alt="Another Speaker">
+                  </div>
+                  <div>
+                    <p>Retrieval-Augmented Generation for Automating Patient Pre-screening in Clinical Trial Recruitment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 - 11:50 AM</time></div>
+              <div class="col-md-10">
+                <h4>Interactive Panel: Successes, Challenges, and Low-Hanging Fruits <span>50 min</span></h4>
+                <h4>Moderator: Zhe He, Ying Li</h4>
+                <div class="speaker mr-5">
+                  <img src="img/speakers/Zhiyong Lu.jpg" alt="Alejandrin Littel">
+                </div>
+                <div class="speaker mr-5">
+                  <img src="img/speakers/Nansu Zong.jpg" alt="Alejandrin Littel">
+                </div>
+                <div class="speaker mr-5">
+                  <img src="img/speakers/Yifan Peng.jpg" alt="Alejandrin Littel">
+                </div>
+                <div class="speaker">
+                  <img src="img/speakers/Jiang Bian.jpg" alt="Alejandrin Littel">
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:50-11:55 AM</time></div>
+              <div class="col-md-10">
+                <h4>Wrap up</h4>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+        </div>
+
+      </div>
+
+    </section>
+
+<!--==========================
+      Organizers Section
+    ============================-->
+    <section id="organizers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Event Organizers</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Zhe he.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="#organizers">Zhe He</a></h3>
+                <p>Associate Professor, School of Information (FSU)</p>
+                <div class="social">
+                  <a href="https://directory.cci.fsu.edu/zhe-he/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/zhehe" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Ying Li.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="#organizers">Ying Li</a></h3>
+                <p>Director, Health Economics & Outcome Research at Regeneron Pharmaceuticals, Inc.</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=8NDpELQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/yingli-yl2565" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Rui Zhang.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                  <h3><a href="#organizers">Rui Zhang</a></h3>
+                  <p>Associate Professor, Department of Surgery (UMN)</p>
+                  <div class="social">
+                    <a href="https://med.umn.edu/bio/rui-zhang" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://www.linkedin.com/in/rui-zhang-003065b" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-wrapper">
+            <div class="speaker">
+              <img src="img/speakers/Nansu Zong.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="#organizers">Nansu Zong</a></h3>
+                <p>Assistant Professor, Mayo Clinic's Department of AI and Informatics Research</p>
+                <div class="social">
+                  <a href="https://www.mayo.edu/research/faculty/zong-nansu-ph-d/bio-20478804" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/nansu-zong-ph-d-111071200" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+      <!--==========================
+      Submission Section
+    ============================-->
+
+    <section id="submission">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Submissions</h2>
+            <h3>Important Dates</h3>
+            <ul>
+              <li>Submission Deadline: </li>
+              <li>Notification of Acceptance:</li>
+              <li>Workshop:</li>
+            </ul>
+            <h3>Submission guidelines</h3>
+            <p>All the submissions have a page limit of 2 pages using <a href="https://brand.amia.org/m/95c9b4f4632c1fe/original/amia-symposium-template-paper-poster.docx" target="_blank" rel="noopener noreferrer">AMIA Template</a></p>
+            <p><a href="https://easychair.org/conferences/?conf=amia2024nlpwg" class="btn-submit" target="_blank" rel="noopener noreferrer">Submit Now</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hilton%20San%20Francisco%20Union%20Square%20333%20O'Farrell%20St,%20San%20Francisco,%20CA%2094102+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Hilton San Francisco Union Square</h3>
+                <p>The Hilton San Francisco Union Square is located a block from the Curran and ACT theaters, and just two blocks from Union Square and Westfield San Francisco Centre. The Powell Street cable car turnaround, San Francisco Museum of Modern Art, and Moscone Convention Center are within a mile. Enjoy panoramic views from our skybar, the city’s highest. The Hilton San Francisco Union Square also has an outdoor pool and whirlpool, two restaurants, a lobby bar, and a grab-and-go market.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+       
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    
+    <div class="container">
+      <div class="copyright">
+        &copy; All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

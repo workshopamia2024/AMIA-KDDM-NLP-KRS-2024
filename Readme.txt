@@ -1,0 +1,1 @@
+All Rights reserved as the licnese has been purchased.
