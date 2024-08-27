@@ -783,6 +783,10 @@ padding: 10px 0 40px 0;
   color: #fff;
 }
 
+.highlight-date{
+  color: #f82249;
+}
+
 .btn-submit {
   display: inline-block;
   padding: 10px 20px;
