@@ -1565,6 +1565,17 @@ padding: 10px 0 40px 0;
   padding: 60px 0;
 }
 
+#contact .row.contact-info {
+  justify-content: center; /* This centers flex items horizontally */
+}
+
+/* Ensure .contact-email behaves like an inline-block element */
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items vertically */
+}
+
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
