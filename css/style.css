@@ -770,8 +770,6 @@ padding: 10px 0 40px 0;
   left: 25px;
 }
 
-
-
 #submission {
   background: url("../img/about-bg.jpg");
   background-size: cover;
@@ -798,24 +796,74 @@ padding: 10px 0 40px 0;
   color: #fff;
 }
 
-#submission h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
 #submission p {
   font-size: 14px;
-  margin-bottom: 20px;
   color: #fff;
 }
 
-#submission ul {
-  font-size: 14px;
-  margin-bottom: 20px;
+#submission .poster-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#submission .poster-item {
+  flex: 1 1 calc(50% - 20px); /* Two columns */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
   color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+
+#submission .poster-item strong {
+  display: block;
+  font-size: 20px;
+  color: #f8d347;
+  margin-bottom: 10px;
+}
+
+#submission .poster-item .authors {
+  margin-top: 10px;
+}
+
+#submission .poster-item .authors p {
+  font-size: 16px;
+  margin: 0 0 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#submission .poster-item .more-authors {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out; /* Smooth open/close */
+}
+
+#submission .poster-item .authors p strong {
+  color: #fff;
+}
+
+#submission .poster-item .authors p span {
+  color: #ddd;
+  text-align: right; /* Align text to the right for better readability */
+}
+
+#submission .toggle-authors-btn {
+  background-color: #f8d347;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#submission .toggle-authors-btn:hover {
+  background-color: #e6c136;
 }
 
 .highlight-date{
@@ -1850,6 +1898,13 @@ padding: 10px 0 40px 0;
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
     padding: 8px 50px;
+  }
+  #submission .poster-item {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+
+  #submission .poster-grid {
+    flex-direction: column; /* Stack items vertically */
   }
 }
 
