@@ -876,6 +876,24 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('.toggle-authors-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const moreAuthors = this.previousElementSibling;
+        
+        // Toggle logic for showing/hiding authors
+        if (moreAuthors.style.maxHeight) {
+          moreAuthors.style.maxHeight = null; // Collapse
+          this.textContent = "Read more";
+        } else {
+          moreAuthors.style.maxHeight = moreAuthors.scrollHeight + "px"; // Expand
+          this.textContent = "Read less";
+        }
+      });
+    });
+  </script>
+  
 </body>
 
 </html>
