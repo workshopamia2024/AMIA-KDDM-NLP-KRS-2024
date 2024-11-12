@@ -1772,6 +1772,15 @@ padding: 10px 0 40px 0;
   background: #e0072f;
 }
 
+.dropdown-item {
+  color: #e0072f !important; /* Set text color to #e0072f */
+}
+
+/* Optional: Change color on hover */
+.dropdown-item:hover {
+  color: #b0062a; /* Darker shade on hover */
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
